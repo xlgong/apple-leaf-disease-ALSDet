@@ -31,12 +31,12 @@ Train ALSDet (Cascade R-CNN with GC + dilation + OHEM):
 
 bash
 python tools/train.py \
-    configs/alsdet/cascade_rcnn_r50_gcb_dilation_ohem.py \
+    alsdet/alsdet/cascade-rcnn_r50-gcb-r16-c3-c5_fpn_ms_ohem_110_1x_coco.py \
     --work-dir ./work_dirs/alsdet/
 
 4. Evaluation
 bash
 python tools/test.py \
-    configs/alsdet/cascade_rcnn_r50_gcb_dilation_ohem.py \
+    alsdet/alsdet/cascade-rcnn_r50-gcb-r16-c3-c5_fpn_ms_ohem_110_1x_coco.py \
     ./work_dirs/alsdet/epoch_12.pth \
     --out ./work_dirs/alsdet/results.pkl
